@@ -40,7 +40,7 @@ class ChatBot():
     @staticmethod
     def action_time():
         return datetime.datetime.now().time().strftime('%H:%M')
-# Running the AI
+# Running the AI model
 if __name__ == "__main__":
     ai = ChatBot(name="bot")
     nlp = transformers.pipeline("conversational", model="microsoft/DialoGPT-medium")
